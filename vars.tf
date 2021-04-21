@@ -8,6 +8,11 @@ variable "preemptible" {
   description = "Whether or not this is a preemptible instance."
 }
 
+variable "automatic_restart" {
+  default = false
+  description = "Whether or not to automatically restart the instance"
+} 
+
 variable "subnetwork_name" {
   default = "default"
   description = "The name of the subnetwork to attach the instance to."
