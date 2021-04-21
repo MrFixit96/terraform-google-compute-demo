@@ -5,7 +5,7 @@ output "private_ip" {
 
 output "public_ip" {
   description = "list public ip on compute instance if there is one"
-  value       = module.compute.*.public
+  value       = module.compute.*.public_ip
 }
 
 /*
