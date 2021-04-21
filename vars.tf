@@ -23,7 +23,7 @@ variable "region" {
   description = "The region to provision to"
 }
 
-variable "project" {
+variable "project_id" {
   default = "my-project"
   description = "The Google Cloud Project ID to provision in to."
 }
