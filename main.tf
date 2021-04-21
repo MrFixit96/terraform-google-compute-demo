@@ -5,7 +5,8 @@ module "compute" {
   version = "2.0.3"
 
   instance_name = var.instance_name
-  machine_type_prod = true
+  # environment can be prod or dev and chooses the machine_type n1-standard-1 or f1-micro
+  environment == "prod"
   preemptible = var.preemptible
   automatic_restart = var.automatic_restart
   on_host_maintenance = var.on_host_maintenance
