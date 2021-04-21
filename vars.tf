@@ -4,14 +4,19 @@ variable "instance_name" {
 }
 
 variable "preemptible" {
-  default = "true"
+  default = "false"
   description = "Whether or not this is a preemptible instance."
 }
 
 variable "automatic_restart" {
-  default = false
+  default = true
   description = "Whether or not to automatically restart the instance"
 } 
+
+variable "on_host_maintenance" {
+  description = "(Optional) Describes maintenance behavior for the instance. Can be MIGRATE or TERMINATE"
+  default     = "MIGRATE"
+}
 
 variable "subnetwork_name" {
   default = "default"

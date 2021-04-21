@@ -7,6 +7,7 @@ module "compute" {
   instance_name = var.instance_name
   preemptible = var.preemptible
   automatic_restart = var.automatic_restart
+  on_host_maintenance = var.on_host_maintenance
   project = var.project_id
   subnetwork_name = var.subnetwork_name
 }
