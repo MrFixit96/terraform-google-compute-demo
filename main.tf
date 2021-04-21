@@ -2,7 +2,7 @@
 // Modules
 module "compute" {
   source  = "app.terraform.io/janderton-sandbox/compute/google"
-  version = "2.0.0"
+  version = "2.0.1"
 
   instance_name = "tfe-gce-demo"
   preemptible = "true"
